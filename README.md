@@ -135,11 +135,11 @@ Note that `-f config-path` is optional. The gateway will look for `./config.json
 To run the common (non-driver-specific) unit tests, first make sure server.js is configured and running with one of the drivers, then
 
     cd test
-    ../node_modules/vows/bin/vows common_test/test*.js --spec
+    ../node_modules/vows/bin/vows ./common_test/test*.js --spec
 
 To run the fs-driver tests from the same test folder do:
 
-    ../node_modules/vows/bin/vows fs_test/test*.js --spec
+    ../node_modules/vows/bin/vows ./fs_test/test*.js --spec
 
 NOTE: To avoid invoking vows via ../node_modules, install vows globally using `npm install -g vows`  
         
